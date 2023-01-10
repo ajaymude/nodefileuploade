@@ -1,0 +1,36 @@
+<%- include('../layouts/header') %>
+
+<h1> user registration form</h1>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Enter name" required >
+    <br>
+    <br>
+    <input type="text" name="email" placeholder="Enter email" required >
+    <br>
+    <br>
+    <input type="text" name="mno" placeholder="Enter mno" required >
+    <br>
+    <br>
+    <input type="file" name="image" required >
+    <br>
+    <br>
+   
+    <input type="text" name="pass" placeholder="Enter pass" required >
+    <br>
+    <br>
+    <input type="submit" value="register">
+</form>
+
+<%
+
+    if(typeof  message !== 'undefined'){
+        %>
+        <p><%= message %></p>
+        <%
+    }
+
+ %>
+<br>
+
+<%- include('../layouts/footer') %>
